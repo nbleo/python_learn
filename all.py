@@ -18,6 +18,7 @@ class Dog(Animal):
     def bark(self):
         print("汪汪汪")
 
+
 class XiaoTian(Dog):
 
     def fly(self):
@@ -27,7 +28,12 @@ class XiaoTian(Dog):
         print("我吃天上的食物")
 
     def bark(self):
-        print("叫汪汪汪")
+        print("叫的跟神一样")
+        super().bark()
+        print("%s!!#%@$@$#@$@")
+
+        Dog.bark(self)
+
 
 class Cat(Animal):
 
@@ -38,9 +44,5 @@ class Cat(Animal):
 
 wangcai = XiaoTian()
 
-wangcai.eat()
-wangcai.drink()
-wangcai.run()
-wangcai.sleep()
 wangcai.bark()
-wangcai.fly()
+
