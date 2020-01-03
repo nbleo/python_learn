@@ -1,48 +1,18 @@
-class Animal:
+class A:
+    def __str__(self):
+        self.num1 = 100
+        self.num2 = 200
 
-    def eat(self):
-        print("吃---")
-
-    def drink(self):
-        print("喝---")
-
-    def run(self):
-        print("跑---")
-
-    def sleep(self):
-        print("睡---")
+    def __test(self):
+        print("私有方法 %d %d" % (self.num1, self.num2))
 
 
-class Dog(Animal):
+class B(A):
+    def demo(self):
+        # print("访问父类的私有属性 %d" % self.__num2)
+        pass
 
-    def bark(self):
-        print("汪汪汪")
+b = B()
 
-
-class XiaoTian(Dog):
-
-    def fly(self):
-        print("我在飞飞飞")
-
-    def eat(self):
-        print("我吃天上的食物")
-
-    def bark(self):
-        print("叫的跟神一样")
-        super().bark()
-        print("%s!!#%@$@$#@$@")
-
-        Dog.bark(self)
-
-
-class Cat(Animal):
-
-    def catch(self):
-        print("抓老鼠")
-
-# 创建一个对象 - 狗对象
-
-wangcai = XiaoTian()
-
-wangcai.bark()
+b.demo()
 
