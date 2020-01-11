@@ -1,13 +1,8 @@
-class Tool(object):
+class Dog(object):
 
-    count = 0
+    @staticmethod
+    def run():
+        print("Dog is running...")
 
-    @classmethod
-    def show_tool_count(cls):
-        print("工具对象的数量  %d" %cls.count )
 
-    def __init__(self, name):
-        self.name = name
-
-        Tool.count += 1
-
+Dog.run()
