@@ -1,4 +1,4 @@
 # python_learn
 python learning
 
-stop at 424 on Jan. 15, 2020
+stop at 430 on Jan. 18, 2020
